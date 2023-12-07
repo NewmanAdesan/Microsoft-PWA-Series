@@ -1,0 +1,88 @@
+
+
+Table of Content
+    - What are PWA?
+    - How do PWAs compare to device specific apps?
+    - How do PWAs compare to websites?
+    - What capabilities do PWAs have access to?
+    - Can PWAs really do as much as native apps like low level hardware stuff 
+    & complicated computing?
+    - How to Create a PWA?
+    - Can PWAs be distributed in app stores?
+
+
+CLASS 1: 
+
+        What are PWA?
+
+            build for all devices from one code base
+            use languages of the web (WA)
+            real device specific app not just website.
+
+        How do PWAs compare to device specific apps?
+            - device specific languages VS html,css,js
+            - compiled & packged as executable VS hosted on web servers
+            - one code base per device VS single code base
+            - one executable per device VS a single hosted app
+            - installed VS installed, and accessible via a URL or search engine (discovered and included in search engine results pages - SERPs - can be index by search engines - search engines can crawl pwa's content)
+            - can be distributed in application stores VS can be distributed in application stores
+
+        How do PWAs compare to websites?
+            - almost like websites
+                - use same technologies
+                - linkable (linkability)
+                - discoverable by search engines (discoverability)
+                - safe to use on browser (Secure)
+                - (Responsiveness)
+            - and more than that
+                - can be installed (Installability)
+                    - it has its own icon - in start menu, taskbar
+                    - it has its own standalone window like traditional app
+                    - access to much more advanced capabilities
+                - I can get push notification alerts even if PWA is not actively in use (Re-Engageibility)
+                - I can get a offline PWA experience (Network Independence)
+                - 
+            
+
+        What capabilities do PWAs have access to?
+            - offline access 
+                - only at initial is internet access needed.
+                - it can cached information.
+                - it can use local storage.
+                - it can even download things like movies, article for offline viewing & on
+
+            - native sharing 
+                - notice you can share pictures in your photo album with other application.
+                - you hit the share button & the devices shows you other native application you can share to.
+                - PWAs have this functionality also, it can share content & received shared content
+
+
+        Can PWAs really do as much as native apps like low level hardware stuff & complicated computing?
+            - the web has been in constant evolution over the years.
+            - the gap btw what the web can do & what native apps can do have been closing more & more.
+            - one technique is called Web Assembly (WASM)
+                - allows run native modules e.g c++ code that can manipulate movies, songs or whatever 
+                - & you can compile this down to modules with web assembly to run on websites & PWAs 
+                - & it will run at speed that is near native
+            another technique is Low-Level Hardware Access
+                - PWAs have APIs to talk over bluetooth or USB or NFC
+
+
+        How to Create a PWA?
+            - you need three layers on knowledge to create your own PWAs
+            - the first layer
+                - at this layer are three technologies
+                - HTML, CSS, JS for the user interface of the app
+            - the second layer
+                - at this layer are three technologies
+                - MANIFEST, SW(service workers) & HTTPS
+                - Manifest is a json file which will contain the icon, name, description of the app & other information about how your app will integrate into the operating system  
+                - SW is a bit complicated. the file is in charge of making your app reliable. it takes care of requesting, fetching, offline support e.t.c
+                - HTTPS provide secure connection to the webserver
+            - the third layer
+                - at this layer we deal with DEVICE ADAPTATION, OS INTEGRATION & OFFLINE SUPPORT
+
+        Can PWAs be distributed in app stores?
+            - a pwa is a website at its core so you cant publish a website directly in app stores.
+            - BUT you can use a tool called PWA BUILDER.COM
+            - with this tool you can scan the url of your progressive web app & it will give you some warnings to take care of & if everything is fine it will give you a package or multiple packages which you can host all stores like ios store, android store, microsoft store
