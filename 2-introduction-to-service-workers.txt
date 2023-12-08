@@ -1,0 +1,58 @@
+Table of Content
+    - What is a service worker?
+    - How to make an app work offline
+    - How to get Started with Service Worker
+    - Can Service Workers do other things
+
+
+
+
+CLASS 2 : Introduction to Service workers
+
+    What is a service worker?
+        - javscript file (sw.js) added to your application
+        - responsible for making app reliable 
+        - to load service worker, utilize navigator.serviceWorker.register(sw.js) in index.html
+        - run in separate thread from your website
+        - responsible for making app offline capable
+        - responsible for intercepting, modifying & responding to network request utilizing 2 api's 'THE FETCH API' and 'THE CACHE API'
+        - it is network reliable because of this two api's, knows when to fetch from the network & when to cache the data 
+
+
+    How to make an app work offline
+        - in service worker make sure to download enough infomation in the cache so your application can display something.
+        - typically download the html, css & js needed offline & place in cache using 'THE CACHE API' (caching the static resource your application needs)
+        - then other dynamic content that you want displayed offline can be stored in the cache also or index.db, 
+        - the SW can detect the offline status & get the content from the index.db
+
+
+    How to get Started with Service Worker
+        - SW are the brain behind the app & contain a lot of comple logic SO one step at a time.
+        - start with simple caching logic (Cache static resources)
+        - then handle a custom offline page ()
+        - then more complicated 
+        - don't do it alone. tons of resources to bulid a service worker
+            - docs.pwabuilder.com
+            - aka.ms/learn-pwa/30Days-blog
+            - aka.ms/learn-pwa/workshop/edge-docs
+            - learn.microsoft.com
+            - developer.mozilla.org/en-US/docs/Web/Progressive wep apps
+            - web.dev/learn/pwa/
+            - the workbox library (makes the service worker code simpler & no need to worry about the complexity)
+
+
+    Can Service Workers do other things
+        - three other things are
+        - push messages
+        - offline listening
+        - periodic updates
+
+        - push messages
+        - this is a great way to re-engage users with the app
+
+        - offline listening
+        - SW runs separately from the app, it keeps listening
+        - if your server sends a message to your device, even though your app is not open the SW listens & can get the message & cache them & even show like a notification on the screen
+
+        - periodic update
+        - for example you can set up the SW so that it fetch new data from the server once a day. so when users opens the app they get fresh content.
