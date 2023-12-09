@@ -1,0 +1,51 @@
+Table of Content
+    - Do PWAs have access to advanced capabilities?
+    - Which web capabilities fo PWAs have access to?
+    - How can PWAs integrate into the Operating System?
+    - How to keep track of new capabilities?
+
+
+
+
+Do PWAs have access to advanced capabilities?
+    - capabilities are in two groups
+    - web apis (capabilities that belong to the web plaform) &
+    - pwa os integration (apis & feature that websites can't use only pwa's can use them)
+
+
+
+
+
+Which web capabilities fo PWAs have access to?
+    - web browser api: media api, webaudio api, webGl, canvas for 2d graphics, webmidi to hook up to instrucment
+    - hardware api: bluetooth, usb, nfc
+    - web payment api:
+    - web authentication api:
+    - a lot of thing you can do on the web today
+
+
+
+
+
+How can PWAs integrate into the Operating System?
+    - Managing files (file Handlers - register is which type of file you want your app to handle)
+    - File System Access Api to store changes you make to the File
+    - Sharing: pwa can interface with the OS share dialogue to share even receive
+    - Badges Api (a way to reengage user)
+    - Link Handling - ability to handle links and protocols (register to be a handler to a custom link)
+    - window-controls-ovelay: access to the corners
+    - widgets: present your widgets that go with your app
+
+
+
+
+
+How to keep track of new capabilities?
+    - fugu-tracker.web.app
+    they work on all this api & on more. of
+
+    - web.dev/blog/
+    - web.dev/learn/pwa
+
+
+
