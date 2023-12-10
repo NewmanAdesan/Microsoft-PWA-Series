@@ -1,0 +1,85 @@
+Table of Content
+    - Some Examples of Great PWAs
+    - PWAs Best Practices
+
+
+
+
+
+Some examples of great PWAs
+    - visit 'www.pwastats.com' for great examples of PWAs
+
+    - TWITTER
+    - mobile app, desktop app & PWA 
+    - at website in the browser searchbar click download. 
+    - light, fast-to-install, streamlined-ui, straight to the point
+    - shortcuts defined in the manifest
+        - on windows right click on the app in taskbar & you will see a list of actions you can jump into
+        - on mobile you can long press the icon in app-menu & see the same list of actions
+    - badging api (shows a number of unread tweets)
+    - share target feature (makes twitter pwa a reciever of content, can share images with it)
+
+
+    starbucks app
+        - destructured the UI, simple, does the job
+
+    pwamps
+        - music player app
+        - specifically for desktop though works on mobile
+        - everything is local, no server, offline
+        - drag & drop your music file & plays it
+        - it uses widgets
+        - it uses window control overlay advanced feature
+        - uses a tonne of OS integration feature
+
+    Wami
+        - image manipulation application
+        - specifically for desktop though works on mobile
+        - drag & drop images
+        - create a number of steps to manipulate images
+            - black & white
+            - resize it
+            - rotate it
+            - crop it
+            - whatever you want
+            - batch the manipulation & save them in one go to disk
+        - it uses two interesting things 
+            - File system Access api (save changed files to disk)
+            - Web Assembly (manipuate the images realy fast)
+
+
+
+
+PWA Best Practice
+    - great performance
+    - accessibility (expanding target audience)
+    - close to a real app as you can, not just a website
+        - streamline the UI
+        - declutter the content
+        - remove big headers and footers
+        - use advance capabilities to feel like a real app
+        - publich to app stores
+        - re-engage users
+    - its not just about adding a manifest, a service-worker, https & you are done. no there is more to this
+
+    - Performance
+        - utilizing the service worker to cache content
+        - register user interaction
+            - like a new button style when it is clicked
+            - loading a skeleton screens
+
+
+    Accessibility
+        - keep this in mind from the start
+        - use the right html elements for the job
+
+    - Differentiate your App from a Website
+        - different expectations from website
+        - typical application do not have huge header & huge footer (about & links), take it out, go straight down to business, people want to accomplish a task & have taken the decision to install your app; they know what it is about
+
+    - Use the Advanced Capabilities
+        - use the pwabuilder.com
+
+    - Re-engage users as Approriate
+        - the notification api
+        - the badging api
