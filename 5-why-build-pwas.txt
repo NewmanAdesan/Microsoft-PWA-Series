@@ -1,0 +1,37 @@
+Table Of Content
+    - Why Build PWAs
+        - No string attached (preview)
+        - Transparent update
+        - Lighter/Quicker installation
+        - Secure
+        - Responsive
+        - Linkability
+        - Search engine discoverability
+
+
+A Recap - Why Build PWAs
+
+in software deve - different solution to solve a problem.
+pwa is a great solution to build apps but it depends on your usecase.
+
+pwa comes with the benefit of having just one codebase.
+
+pwa apps also are based on the web   
+    - search engine discoverability (may be challenging to for users to find traditional apps)
+    - linkability (some one can send you a link to the app)
+    - responsive (mobile, tablet, two-screens, desktop)
+    - security (secure encryption)
+    - no string attached
+        - to try out a native app, you need to install it & then uninstall if you are not interested
+        - with pwas you just go to the web browser & try it out right away, if you are interested in it then install it. no string attache
+    - transparent update 
+        - a cut down on maintainace cost
+        - no need to redeploy a new package, no need for users to re-instally
+        - with pwas it is transparent, service worker can easily help out
+        - the service worker can download new version of the files & update your app without your realising
+    - lighter, quicker installation  
+        - initially only basic download. 
+        - native app have to download the whole thing with pwa we can fetch what is need later on.
+        - point is PWAs can start really small
+
+
