@@ -1,0 +1,26 @@
+
+Table of Content
+    - What is a Service Worker?
+    - How does a service worker operate?
+    - Why are service worker important?
+
+
+What is a Service Worker?
+    - a layer between your PWA & the network
+    - any request sent by your PWA will first go through the service worker
+    - in the service worker, we can add custom functionalities for how the request are handled
+    - think of service worker as a checkpoint, taking hands-on control of network calls from our pwa 
+
+
+How does a service worker operate?
+    - special web worker which runs separate process from the rest of your app.
+    - the script that runs in service worker is non-blocking & primarily centered around event listeners,
+    - which means you dont have to worry about it interfering with your app.
+    - user can freely interact with the app interface while service workers handles event in the background.
+
+
+Why are service worker important?
+    - Offline Capability
+        - webapps are classically dependent on a network connection
+        - service worker are work-around for when we cant connect.
+        - they can define behaviour for request when the network is unavailble - keeping out app functional when offline
