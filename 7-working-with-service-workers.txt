@@ -1,0 +1,54 @@
+
+Table of Content
+    - Where do i add my Service Worker?
+    - How do you register a service workers?
+    - Service Workers and Event Listeners?
+    - What Events are the Lifecycle Events?
+    - What about Fetch Events?
+
+
+Where do i add my Service Worker?
+    - it is a javascript file (sw.js)
+    - they can live anywhere within your project but will only have access to resources at or below its directory level (this is it's scope)
+    - this is why we have it at the root of our project so it has access to everything
+    - we add our service worker through a process called REGISTRATION.
+
+
+How do you register a service workers?
+    - this is done with a few lines of code in index.html
+    - first we check if our browsing context have access to the service working capability
+    - then we utilize the register funtion to add it
+        <script>
+            if (typeof navigator.serviceWorker !== 'undefined') {
+                navigator.serviceWorker.register('sw.js')
+            }
+        </script>
+
+
+Service Workers and Event Listeners?
+    - service workers are event-driven & 
+    - use event listeners to execute functionality
+        self.addEventListener('activate', (event)=>{
+            event.waitUntil(clients.claim());
+        })
+    - the activate event here is one of our LIFECYCLE EVENTS
+    - almost all key service worker functionality will be implemented in this way 
+    - (listen to event & run an handler)
+    - two groups of Event we listen to 'Lifecycle Events' & 'Fetch Events'
+
+
+What Events are the Lifecycle Events?
+    - two major lifecycle events the install Events & the activate Events
+    - the install event
+        - fired when a service worker is installed for the first time.
+        - this is a great place to add any handle that does any setup our service worker may need
+        - this often include what we call pre-caching to be covered later on
+    - the activate event
+        - fired after a service worker has finished installing and becomes functional
+        - one key thing we do here is 'CLAIMING CLIENT', the service worker claims and take responsibility for any exiting instances of our application.
+
+        
+What about Fetch Events?
+    - the main event you will be concerned with when dealing with service worker.
+    - this event fires when your PWA goes to fetch a resource from the network,
+    - it allows your worker to handle the request with custom logic, provide fallback behaviour which often include making use of caches.
